@@ -1,0 +1,52 @@
+{
+  "name": "babel-angular2-boilerplate",
+  "version": "1.0.0",
+  "description": "A Babel + Angular2 boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChibiBlasphem/babel-angular2-boilerplate.git"
+  },
+  "author": "ChibiBlasphem <chibiblasphem@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChibiBlasphem/babel-angular2-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ChibiBlasphem/babel-angular2-boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.7.6",
+    "babel-eslint": "^6.0.2",
+    "babel-plugin-angular2-annotations": "^5.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.7.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "babylon": "^6.7.0",
+    "browserify": "^13.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "object-assign": "^4.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.15",
+    "babel-plugin-transform-class-properties": "^6.6.0",
+    "babel-polyfill": "^6.7.4",
+    "es6-shim": "^0.35.0",
+    "express": "^4.13.4",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "^5.0.0-beta.6",
+    "zone.js": "^0.6.11"
+  }
+}
