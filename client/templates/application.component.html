@@ -1,1 +1,23 @@
-<h1>{{title}}</h1>
+{{diagnosis}}
+<div class="todo-app">
+    <div class="app-title">//&nbsp;TODO&nbsp;//</div>
+    <div class="tasks-container">
+        <div class="actions">
+            <div *ngIf="!creatingOrEditing">
+                <button *ngIf="!selected" class="btn btn-primary" (click)="setEditing()">Nouvelle</button>
+                <div *ngIf="selected">
+                    <button class="btn btn-primary" (click)="setEditing(selected)">Editer</button>
+                    <button class="btn btn-danger" (click)="delete(selected)">Supprimer</button>
+                </div>
+            </div>
+            <div *ngIf="creatingOrEditing">
+                <input type="text" [(ngModel)]="edition.label" class="form-control"><button class="btn btn-primary" (click)="save(edition)">Valider</button>
+            </div>
+        </div>
+        <ol class="tasks">
+            <li *ngFor="#task of tasks" (click)="toggleSelection(task)" [class.completed]="task.completed" [class.selected]="isSelected(task)">
+                <input type="checkbox" [(ngModel)]="task.completed" stopPropagation> {{task.label}}
+            </li>
+        </ol>
+    </div>
+</div>

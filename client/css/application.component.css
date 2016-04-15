@@ -1,0 +1,77 @@
+.todo-app {
+    position: absolute;
+    display: block;
+    margin-top: -260px;
+    margin-left: -190px;
+    top: 50%;
+    left: 50%;
+
+    width: 380px;
+    height: 520px;
+
+    background-color: #fff;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 50px rgba(0, 0, 0, .15);
+}
+
+.app-title {
+    position: absolute;
+    padding: 5px 10px;
+
+    width: 100%;
+
+    text-align: center;
+    font-size: 2em;
+
+    border-radius: 5px 5px 0 0;
+    background-color: hsl(240, 45%, 42%);
+    color: #fff;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    z-index: 1;
+}
+
+.tasks-container {
+    position: relative;
+    padding-top: 50px;
+    height: 100%;
+
+    z-index: 0;
+}
+
+.actions {
+    height: 50px;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.actions input {
+    display: inline-block;
+    width: 80%;
+}
+
+.tasks {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 0;
+}
+.tasks li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.tasks li.completed {
+    color: #ddd;
+    text-decoration: line-through;
+}
+.tasks li.selected {
+    background-color: #fdfdfd;
+}
+.tasks li.selected.completed {
+    color: #ccc;
+}
+
+.tasks li input[type="checkbox"] {
+    margin: 0 15px;
+}
